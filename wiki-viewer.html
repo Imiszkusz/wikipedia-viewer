@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="wiki-viewer.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title>Wikipedia Viewer FCC</title>
+</head>
+
+<body>
+  
+ <button type="button" class="btn btn-default" id="newsearch">New Search</button>
+  
+ <div class="container-fluid" id="resultbox"></div>
+  
+ <div class="container-fluid" id="searchbox"> 
+    <button type="button" class="btn btn-default" id="random">Just gimme an article already!
+    </button>
+  
+   <form class="search-form" id="searchform">
+     <div class="form-group">
+       <label for="searchbar">Search: </label>
+       <input type="text" id="searchbar" name="wiki_search" />
+       <button type="submit" id="submitbutton"><span class="glyphicon glyphicon-search"></span></button>
+     </div>
+   </form>
+ </div>
+  
+</body>
+<script src="wiki-viewer.js"></script>
+</html>
