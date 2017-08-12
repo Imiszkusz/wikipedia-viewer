@@ -11,4 +11,4 @@ HTML/CSS/Pure JS
 
 
 ## Live View
-http://jsbin.com/ficate/68/edit?output
+http://jimremat.net16.net/index.html
