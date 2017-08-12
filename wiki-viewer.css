@@ -6,14 +6,13 @@ body{
   justify-content: center;
   flex-direction: column;
   font-family: Cambria;
-  background: url("http://www.leonardodavinci.net/images/universal-genius.jpg") center fixed no-repeat;
-  background-size: 70vw;
+  background: url("knitting.jpg") repeat center;
 }
 
 
 #resultbox{
   display: none;
-  width: 50vw;
+  width: 75%;
   background: white;
   flex-direction: column;
   border: 3px solid;
@@ -23,19 +22,33 @@ body{
 
 #newsearch{
   display: none;
-  width: 25vw;
-  margin: 2vh;
+  margin: 2rem;
+}
+
+#random {
+  margin: 1rem 1rem 3rem 1rem;
 }
 
 
 #searchbox {
-  height: 20vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background-color: white;
   border: 3px solid;
   border-radius: 15px;
+}
+
+#searchfield {
+  display: flex;
+  justify-content: center;
+}
+
+#searchbar {
+  margin: 0 .25rem 0 .25rem;
+  width: 12rem;
 }
 
 
@@ -59,4 +72,81 @@ a:hover {
 #submitbutton {
   border-radius: 15px;
   border: none;
+}
+
+
+
+
+
+/*
+==========================================================================
+Media Querys
+==========================================================================
+*/
+
+@media (min-width: 400px) {
+
+  body {
+    justify-content: flex-start;
+
+  }
+
+  #searchbox {
+    width: 90%;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  #searchbar {
+    margin: 0 .5rem 0 .5rem;
+    width: 15rem;
+}
+
+  #random {
+    width: 50%;
+  }
+
+}
+
+
+@media (min-width: 600px) {
+
+   #searchbox {
+     width: 70%;
+  }
+
+    #searchbar {
+      width: 20rem;
+  }
+
+}
+
+
+@media (min-width: 800px) {
+
+   body{
+    background: url("http://www.leonardodavinci.net/images/universal-genius.jpg") no-repeat center fixed;
+   }
+
+   #searchbox {
+     width: 50%;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+
+   body{
+     background: url("http://www.leonardodavinci.net/images/universal-genius.jpg") no-repeat center/70% fixed;
+   }
+   
+   #searchbox {
+     width: 40%;
+  }
+
+   #searchbar {
+     width: 25rem;
+  }
+
 }
